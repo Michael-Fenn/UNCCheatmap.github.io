@@ -131,4 +131,5 @@
     height: 400px;
     width: 50%;
     margin: center;
+    display: inline-block;
 }
