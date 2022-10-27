@@ -131,3 +131,7 @@
     height: 400px;
     width: 50%;
 }
+html body, #map{
+    width: 50%;
+    height: 400px;
+}
