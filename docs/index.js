@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
     // The location of UNCC
-    const UNCC = { lat: 35.30910662583227, long: -80.73357613232336 };
+    const UNCC = { lat: 35.30910662583227, lng: -80.73357613232336 };
     // The map, centered at UNCC
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 4,
