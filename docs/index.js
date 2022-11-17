@@ -13,8 +13,15 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
-//map.on("load", function() {
-  map.setPaintProperty('1060166212','fill-color', '#ff0000')
-//});
+map.on('load', () => {
+  map.addSource('buildings', {
+    type:'geojson',
+    data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
+  })
+});
+/*map.on("load", function() {
 
+  map.setPaintProperty('1060166212','fill-color', '#ff0000')
+});
+*/
 

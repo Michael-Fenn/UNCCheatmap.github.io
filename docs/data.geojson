@@ -1,0 +1,1105 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": 1051865728,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73370144230432, 35.308260769581935]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 17.83678796641813,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865727,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73370558113076, 35.30834659968971]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 27.363288023214565,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865727,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73370009660721, 35.30836528608249]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 29.43171090753006,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166204,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73351234197617, 35.307876082152134]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 30.13988924536787,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1058666185,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73393881320953, 35.30786185470052]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 34.20200403220275,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166193,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73302015662193, 35.30793518077064]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 64.47681104769576,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166193,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73302015662193, 35.30793518077064]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 64.47681104769576,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865706,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73443632730104, 35.30819097005789]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 67.72285776455811,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166209,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73298528790474, 35.307727240995774]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 77.04119449112501,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865706,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73453426361084, 35.30836528608249]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 81.38199370271354,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1058666201,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7347059249878, 35.30757839956556]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 108.25127161798251,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865692,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73414534330368, 35.309023025406674]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "service",
+          "tilequery": {
+            "distance": 110.12232812914444,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865707,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73492678588718, 35.30825268814135]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 112.85087464464328,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865707,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7349057495594, 35.30836528608249]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 113.54001245670572,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865705,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7349781692028, 35.30812342052694]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 116.27442787359772,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166204,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73307648301125, 35.30715704550249]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 118.99519579451369,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865705,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73498487472534, 35.30836528608249]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 120.50465600487252,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865680,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73460400104523, 35.30892343460464]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 6,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "parking",
+          "tilequery": {
+            "distance": 122.90289780377955,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166216,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73406621813774, 35.30702461948657]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 123.8680534173618,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166212,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73396161198616, 35.30696989792909]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 127.61484031603275,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166217,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73408231139183, 35.306986314400234]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 128.35506525978695,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676958,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73234021663666, 35.30883259893105]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 147.9854678403374,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676963,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73216989636421, 35.308988004479275]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 170.50154738401858,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676964,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73205724358559, 35.30894094508422]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 176.14129119922225,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676962,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73205456137657, 35.30913574891376]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 188.67565353829818,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676959,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73179170489311, 35.308786633852534]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 189.53562888083215,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166180,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73161467909813, 35.30791329239845]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 190.7810887519302,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166223,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73174744844437, 35.307210672505136]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 203.14728599050284,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865708,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7359330356121, 35.308393740806196]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 205.68548710288474,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1051865708,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7359330356121, 35.308393740806196]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 205.68548710288474,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676961,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73168575763702, 35.30901427017622]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 209.39590872379273,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050676960,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73176220059395, 35.309193752210575]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 213.97157238007887,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050444732,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7339696586132, 35.31009334518758]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 222.5039553515074,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050444731,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73436126112938, 35.310056135944066]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 225.19883211030853,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1050444723,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73460802435875, 35.30999047253137]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "dormitory",
+          "tilequery": {
+            "distance": 225.40771796840548,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166218,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73286458849907, 35.30614797568268]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 229.50516005396676,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166213,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73367595672607, 35.30602977579137]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "building",
+          "tilequery": {
+            "distance": 229.68788435930924,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166214,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73378592729568, 35.306028681347115]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "false",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "roof",
+          "tilequery": {
+            "distance": 229.93173818602398,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166215,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73545828461647, 35.30639750821945]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 247.48128491297211,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166226,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73110774159431, 35.3071712730781]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 257.2898427313413,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1054121651,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73665454983711, 35.308538203095196]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "pavilion",
+          "tilequery": {
+            "distance": 273.06931314900703,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1054121746,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73664382100105, 35.30759809918236]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 273.4601926923208,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 647343671,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73667600750923, 35.308557902478256]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "building",
+          "tilequery": {
+            "distance": 275.3846427935251,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1635665218975735,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.7316991686821, 35.30623334216344]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "type": "building",
+          "min_height": 0,
+          "iso_3166_2": "US-NC",
+          "iso_3166_1": "US",
+          "tilequery": {
+            "distance": 275.6816317114941,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1059645916,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73347076773643, 35.305619358161294]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 275.9990699469104,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1060166253,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73064371943474, 35.30791329239845]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 278.7296711848242,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1054121651,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73676183819771, 35.308437517284645]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "pavilion",
+          "tilequery": {
+            "distance": 280.9707349961631,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 1059645916,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73307648301125, 35.30561060256248]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "university",
+          "tilequery": {
+            "distance": 281.9434839184076,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 647343671,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73680341243744, 35.308437517284645]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "iso_3166_2": "US-NC",
+          "min_height": 0,
+          "iso_3166_1": "US",
+          "type": "building",
+          "tilequery": {
+            "distance": 284.71849640890343,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      },
+      {
+        "type": "Feature",
+        "id": 5158221913447905,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-80.73062494397163, 35.30859949004895]
+        },
+        "properties": {
+          "underground": "false",
+          "extrude": "true",
+          "height": 3,
+          "type": "building",
+          "min_height": 0,
+          "iso_3166_2": "US-NC",
+          "iso_3166_1": "US",
+          "tilequery": {
+            "distance": 285.1037964517476,
+            "geometry": "polygon",
+            "layer": "building"
+          }
+        }
+      }
+    ]
+  }
