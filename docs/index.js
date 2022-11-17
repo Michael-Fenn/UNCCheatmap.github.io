@@ -16,36 +16,17 @@ var very_low = 200;
 map.on('load', function() {
   map.setPaintProperty("UNCC",'fill-color', '#FF0000');
 });
-  /*
-  map.addSource('tileset_data', {
-    type:'vector',
-    url:'mapbox://mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
-  });
-  map.addLayer({
-    'id': 'UNCC',
-    'source': 'tileset_data',
-    'source-layer': 'UNCC'
-  });
-  */
-  /*
-  map.setFeatureState({
-    source: 'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson',
-    sourceLayer: 'building',
-    id: 1060166212,
-    }, {
-    color: '#0000FF'
-    })
-  
+
+ 
   map.setPaintProperty(
-    'buildings', 
+    'UNCC', 
     'fill-color', 
-    ['match', ['get', 'id'], 1060166212, '#0000ff']
+    ['match', ['get', 'id'], 1, '#0000ff']
   )
   
   
   
-});
-*/
+
 /*map.on("load", function() {
 
   
