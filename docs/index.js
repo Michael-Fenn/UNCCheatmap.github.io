@@ -38,7 +38,7 @@ map.on('load', function() {
   )
   */
   
-  map.setPaintProperty("buildings",'fill-color', '#0000FF');
+  map.setPaintProperty("UNCC",'fill-color', '#0000FF');
 });
 /*map.on("load", function() {
 
