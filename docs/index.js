@@ -31,7 +31,7 @@ map.on('load', function() {
     'building', 
     'fill-color', 
     ['match', ['get', 'id'], 1060166212, '#0000ff']
-  );
+  )
   
   //map.setPaintProperty(1060166212,'fill-color', '#0000FF')
 });
