@@ -16,7 +16,7 @@ var very_low = 200;
 map.on('load', function() {
   map.addSource('tileset_data', {
     type:'vector',
-    url:'mapbox://mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
+    url:'https://studio.mapbox.com/tilesets/mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
   });
   map.addLayer({
     'id': 'UNCC',
