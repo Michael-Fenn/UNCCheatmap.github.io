@@ -25,10 +25,10 @@ map.on('load', function() {
     id: 1060166212,
     }, {
     color: '#0000FF'
-    });
+    })
   */
   map.setPaintProperty(
-    'building', 
+    'buildings', 
     'fill-color', 
     ['match', ['get', 'id'], 1060166212, '#0000ff']
   )
