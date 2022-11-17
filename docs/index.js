@@ -18,7 +18,7 @@ map.on('load', function() {
     type:'geojson',
     data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
   })
-  map.setPaintProperty(1060166212,'fill-color', '#ff0000')
+  map.setPaintProperty(1060166212,'fill-color', '#0000FF')
 });
 /*map.on("load", function() {
 
