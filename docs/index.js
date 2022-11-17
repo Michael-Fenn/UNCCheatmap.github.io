@@ -14,7 +14,7 @@ var low = 400;
 var very_low = 200;
 
 map.on('load', function() {
-  map.setPaintProperty("UNCC",'fill-color', '#0000FF');
+  map.setPaintProperty("uncc",'fill-color', '#0000FF');
 });
   /*
   map.addSource('tileset_data', {
