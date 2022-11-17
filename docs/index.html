@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type = 'module' src="index.js"></script>
+    <script type='module' src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
     <body>
         <nav class="navbar-cs nav-bg-green nav-wrapper ">
             <div class="nav">
-                <a href="index.html "><img src="images/uncclogo.png " alt="unccLogo" class="navbar-logo"></a>
+                <a href="index.html "><img src="uncclogo.png " alt="unccLogo" class="navbar-logo"></a>
                 <a href="index.html " class="nav-link-color nav-font-brand "> UNCC Heatmap</a>
             </div>
             <div class="nav-wrapper ">
@@ -30,51 +30,53 @@
                 </ul>
             </div>
         </nav>
-        <div id = "map">
-                <script
-                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNRAJw6MEHXzG2wS-1MB6TGqn43v5_b7k&callback=initMap&v=weekly&z=5"
-                      defer
-                 ></script>
+        <div class="content">
+            <div id="map" class="conatiner">
+                <div class="row">
+                    <div class="col">
+                        <iframe width='100%' height='100%' src="https://api.mapbox.com/styles/v1/mfenn2/clajw6p60001j14qphmp5iz3n.html?title=false&access_token=pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA&zoomwheel=false#16.47/35.306226/-80.732763" title="Monochrome" style="border:none;"></iframe>
+                    </div>
+                </div>
             </div>
-        
-        <div class="container ">
-            <br>
 
-            <div class="row">
-                <div class="col text-center ">
-                    <div class="dropdown-center ">
-                        <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="container ">
+                <br>
+
+                <div class="row">
+                    <div class="col text-center ">
+                        <div class="dropdown-center ">
+                            <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Weekdays
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Monday</a></li>
-                            <li><a class="dropdown-item" href="#">Tuesday</a></li>
-                            <li><a class="dropdown-item" href="#">Wednesday</a></li>
-                            <li><a class="dropdown-item" href="#">Thursday</a></li>
-                        </ul>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Monday</a></li>
+                                <li><a class="dropdown-item" href="#">Tuesday</a></li>
+                                <li><a class="dropdown-item" href="#">Wednesday</a></li>
+                                <li><a class="dropdown-item" href="#">Thursday</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col text-center ">
-                    <div class="dropdown-center ">
-                        <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="col text-center ">
+                        <div class="dropdown-center ">
+                            <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Hours
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item " href="# ">2:00 PM</a></li>
-                            <li><a class="dropdown-item " href="# ">3:00 PM</a></li>
-                            <li><a class="dropdown-item " href="# ">4:00 PM</a></li>
-                            <li><a class="dropdown-item " href="# ">5:00 PM</a></li>
-                        </ul>
-                    </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="# ">2:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">3:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">4:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">5:00 PM</a></li>
+                            </ul>
+                        </div>
 
+                    </div>
                 </div>
+                <br>
             </div>
-            <br>
         </div>
+        <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
     </body>
 </main>
-<footer class="footer">
-    <p class="footerText">Team WIP © 2022. All Rights Reserved.</p>
-</footer>
+
 
 </html>
