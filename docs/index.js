@@ -14,7 +14,7 @@ var low = 400;
 var very_low = 200;
 
 map.on("load", function() {
-  map.setPaintProperty(1060166212,'fill-color', '#ff000')
+  map.setPaintProperty('Buildings','fill-color', '#ff000')
 });
 
 
