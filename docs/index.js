@@ -12,8 +12,11 @@ var high = 800;
 var medium = 600;
 var low = 400;
 var very_low = 200;
-/*
+
 map.on('load', function() {
+  map.setPaintProperty("UNCC",'fill-color', '#0000FF');
+});
+  /*
   map.addSource('tileset_data', {
     type:'vector',
     url:'mapbox://mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
@@ -40,7 +43,7 @@ map.on('load', function() {
   )
   
   
-  map.setPaintProperty("UNCC",'fill-color', '#0000FF');
+  
 });
 */
 /*map.on("load", function() {
