@@ -14,7 +14,7 @@ var low = 400;
 var very_low = 200;
 
 map.on('load', function() {
-  map.addSource('buildings', {
+  map.addSource('building', {
     type:'geojson',
     data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
   })
@@ -34,7 +34,7 @@ map.on('load', function() {
   )
   */
   
-  map.setPaintProperty("university",'fill-color', '#0000FF')
+  map.setPaintProperty("building",'fill-color', '#0000FF')
 });
 /*map.on("load", function() {
 
