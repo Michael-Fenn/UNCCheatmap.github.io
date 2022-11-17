@@ -13,10 +13,23 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
-map.on('load', function(){ 
-  map.setPaintProperty("buildings", "fill-color",
-    ["match", ['get',"id"], 1060166212, "ff0000"]);
-});
+map.addLayer({
+  id: '1060166212',
+  'type': 'fill',    /*define the type of layer fill, line, point, fill-extrusion, background, raster, circle*/
+  'source-layer': 'Buildings',
+  'layout': {
+    'visibility': 'visible'
+  },
 
+  /*there are many options for styling - this is a simple style*/
+  'paint': {
+    'fill-color': ['match', ['get', 'PROV_ID'], // get the property
+                   'GP', 'yellow',              // if 'GP' then yellow
+                   'XX', 'black',               // if 'XX' then black 
+                   'white']                     // white otherwise
+    },
+    'fill-outline-color': 'white'
+  }
+);
 
 
