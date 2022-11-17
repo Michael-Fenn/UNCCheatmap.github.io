@@ -434,9 +434,7 @@
           "min_height": 0,
           "iso_3166_1": "US",
           "type": "university",
-          "style": {
-            "fill": "blue"
-          },
+          "fill": "#0000ff",
           "tilequery": {
             "distance": 127.61484031603275,
             "geometry": "polygon",
