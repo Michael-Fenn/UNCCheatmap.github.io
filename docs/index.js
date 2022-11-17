@@ -3,7 +3,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
 var map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mfenn2/clajw6p60001j14qphmp5iz3n', // style URL
+    style: 'mfenn2.clalmrqwg0b7k27ny1dabd295-50i72', // style URL
 });
 
 //placeholder values
@@ -16,7 +16,7 @@ var very_low = 200;
 map.on('load', function() {
   map.addSource('building', {
     type:'geojson',
-    data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
+    data:'mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
   });
   map.addLayer({
     'id': 'UNCC',
