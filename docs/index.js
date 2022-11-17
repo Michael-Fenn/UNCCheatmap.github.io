@@ -18,6 +18,7 @@ map.on('load', function() {
     type:'geojson',
     data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
   })
+  /*
   map.setFeatureState({
     source: 'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson',
     sourceLayer: 'building',
@@ -25,13 +26,13 @@ map.on('load', function() {
     }, {
     color: '#0000FF'
     });
-  /*
+  */
   map.setPaintProperty(
     'building', 
     'fill-color', 
-    ['match', ['get', id], 1060166212, 0.5 , 1]
+    ['match', ['get', 'id'], 1060166212, 0.5 , 1]
   );
-  */
+  
   //map.setPaintProperty(1060166212,'fill-color', '#0000FF')
 });
 /*map.on("load", function() {
