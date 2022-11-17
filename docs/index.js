@@ -14,7 +14,10 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
-map.setPaintProperty("buildings", "fill-color",
+map.on('load', function(){ 
+  map.setPaintProperty("buildings", "fill-color",
     ["match", ['get',"id"], 1060166212, "ff0000"]);
+});
+
 
 
