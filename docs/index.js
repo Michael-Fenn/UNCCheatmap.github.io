@@ -1,7 +1,7 @@
 // Initialize and add the map
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
-const map = new mapboxgl.Map({
+var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mfenn2/clajw6p60001j14qphmp5iz3n', // style URL
 });
@@ -13,7 +13,7 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
-map.on('load', () => {
+map.on('load', function() {
   map.addSource('buildings', {
     type:'geojson',
     data:'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson'
