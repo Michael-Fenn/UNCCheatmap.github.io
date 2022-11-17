@@ -12,17 +12,18 @@ var high = 800;
 var medium = 600;
 var low = 400;
 var very_low = 200;
-
+/*
 map.on('load', function() {
   map.addSource('tileset_data', {
     type:'vector',
-    url:'https://studio.mapbox.com/tilesets/mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
+    url:'mapbox://mfenn2.clalmrqwg0b7k27ny1dabd295-50i72'
   });
   map.addLayer({
     'id': 'UNCC',
     'source': 'tileset_data',
     'source-layer': 'UNCC'
   });
+  */
   /*
   map.setFeatureState({
     source: 'https://mikesmind.blog/UNCCheatmap.github.io/data.geojson',
@@ -37,10 +38,11 @@ map.on('load', function() {
     'fill-color', 
     ['match', ['get', 'id'], 1060166212, '#0000ff']
   )
-  */
+  
   
   map.setPaintProperty("UNCC",'fill-color', '#0000FF');
 });
+*/
 /*map.on("load", function() {
 
   
