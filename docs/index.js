@@ -13,10 +13,12 @@ var medium = 600;
 var low = 400;
 var very_low = 200;
 
+map.on('mouseenter', 'Buildings', function() {
 map.setPaintProperty(
   'Buildings', 
   'icon-opacity', 
   ['match', ['get', 'id'], 1060166212, 0.5 , 1]
 );
+});
 
 
