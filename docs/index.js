@@ -21,7 +21,7 @@ map.on('load', function() {
   map.setPaintProperty(
     'UNCC', 
     'fill-color', 
-    ['match', ['get', 'id'], 1, '#0000ff']
+    ['match', ['get', 'ID'], 1, '#0000ff']
   )
   
   
