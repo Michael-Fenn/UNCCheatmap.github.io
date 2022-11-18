@@ -127,9 +127,16 @@
     border-radius: 5px;
     background-color: gainsboro;
 }
-#map{
-    height: 50%;
-    width: 75%;
-    margin: center;
-    display: inline-block;
+#map {
+    height: 450px;
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
