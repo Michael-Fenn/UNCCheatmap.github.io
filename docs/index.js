@@ -15,11 +15,6 @@ var very_low = 200;
 
 map.on('load', function() {
   map.setPaintProperty("uncc",'fill-color', '#FF0000');
-  map.setPaintProperty(
-    'uncc', 
-    'fill-color', 
-    ['match', ['get', 'ID'], 1, '#0000ff']
-  )
 });
 
  
