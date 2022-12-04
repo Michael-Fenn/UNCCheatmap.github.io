@@ -27,12 +27,15 @@ map.on('load', function() {
 });
 
 function populateTable(){
-  var tableContent = "";
+  var tableContent = '';
   //need dropdown menu to properly select so function knows which file to grab.
-  var selectedMenu = document.getElementById("days").value();
-  var covidToggle = document.getElementById("covidToggle").value();
-  $.get("../non-covid/Friday.txt", function( data ) {
-    alert(data)
+ // var selectedMenu = document.getElementById("days").value();
+  //var covidToggle = document.getElementById("covidToggle").value();
+  $.ajaxSetup({ beforeSend : function(xhr) {
+    xhr.setRequestHeader("Range", "bytes=0-2800" );
+  }});  
+  $.get("../non-covid/Friday.txt", function(data) {
+    alert(data);
     var linebyline = data.split('\n');
     $.each(linebyline, function(key, value){
       tableContent += '<tr>';
