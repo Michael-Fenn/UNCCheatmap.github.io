@@ -1,4 +1,7 @@
 // Initialize and add the map
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.1.js';
+document.getElementsByTagName('head')[0].appendChild(script);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
 var map = new mapboxgl.Map({
@@ -28,9 +31,8 @@ function populateTable(){
   //need dropdown menu to properly select so function knows which file to grab.
   var selectedMenu = document.getElementById("days").value();
   var covidToggle = document.getElementById("covidToggle").value();
-  $.get("../non-covid/Friday.txt", function( data )){
-    alert(data);
-  }
+  $.get("../non-covid/Friday.txt", function( data ) {
+    alert(data)
     var linebyline = data.split('\n');
     $.each(linebyline, function(key, value){
       tableContent += '<tr>';
@@ -39,6 +41,7 @@ function populateTable(){
     });
 
     $('#tablediv').html(tableContent);
+  });
   }
 
 
