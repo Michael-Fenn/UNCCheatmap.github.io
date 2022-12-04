@@ -12,12 +12,33 @@ var high = 800;
 var medium = 600;
 var low = 400;
 var very_low = 200;
-
+//current building names: "uncc"(union), chhs, cato, woodward, bioinformatics, prospector, portal, student-activity-center, 
+// cameron, burson, fretwell, colvard, cone, atkins, urec. 
 map.on('load', function() {
   map.setPaintProperty("uncc",'fill-color', '#0000FF');
   map.setPaintProperty("chhs", "fill-color", "#ff0000");
-  map.setPaintProperty("cato", "fill-color", "#F2E34C")
+  map.setPaintProperty("cato", "fill-color", "#F2E34C");
+  map.setPaintProperty("woodward", "fill-color", "#FFB52E");
 });
 
- 
+function populateTable(){
+  var tableContent = "";
+  //need dropdown menu to properly select so function knows which file to grab.
+  var selectedMenu = document.getElementById("days").value();
+  var covidToggle = document.getElementById("covidToggle").value();
+  $.get("../4155-group1/non-covid/Friday.txt", function( data )){
+    alert(data);
+  }
+    var linebyline = data.split('\n');
+    $.each(linebyline, function(key, value){
+      tableContent += '<tr>';
+      tableContent += '<td>' + value + '</td>';
+      tableContent += '</tr>';
+    });
 
+    $('#tablediv').html(tableContent);
+  }
+
+
+
+ 

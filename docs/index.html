@@ -25,53 +25,94 @@
             </div>
             <div class="nav-wrapper ">
                 <ul class="nav justify-content-end ">
-                    <li class="nav-item "><a class="nav-link-color nav-font " href="hotspots.html ">Hot Spots</a></li>
-                    <li class="nav-item "><a class="nav-link-color nav-font " href="interestingTrends.html ">Interesting Trends</a></li>
-                    <li class="nav-item "><a class="nav-link-color nav-font " href="additionalInfo.html ">Additional Information</a></li>
-                    <li class="nav-item "><a class="nav-link-color nav-font " href="about.html ">About</a></li>
+                    <li class="nav-item"><a class="nav-link-color nav-font " href="hotspots.html ">Hot Spots</a></li>
+                    <li class="nav-item"><a class="nav-link-color nav-font " href="parking.html ">Parking</a></li>
+                    <li class="nav-item"><a class="nav-link-color nav-font " href="additionalInfo.html ">Additional Information</a></li>
+                    <li class="nav-item"><a class="nav-link-color nav-font " href="about.html ">About</a></li>
                 </ul>
             </div>
         </nav>
         <div class="content">
-            
-                
+            <div class="map-container">
+
+
+
                 <div id='map' style='width: 1000px; height: 500px;'></div>
-                
-            
+
+
+
+            </div>
 
             <div class="container ">
                 <br>
 
-                <div class="row">
+                <div class="row ">
                     <div class="col text-center ">
                         <div class="dropdown-center ">
                             <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Weekdays
                         </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" id="days">
                                 <li><a class="dropdown-item" href="#">Monday</a></li>
                                 <li><a class="dropdown-item" href="#">Tuesday</a></li>
                                 <li><a class="dropdown-item" href="#">Wednesday</a></li>
                                 <li><a class="dropdown-item" href="#">Thursday</a></li>
+                                <li><a class="dropdown-item" href="#">Friday</a></li>
+                                <li><a class="dropdown-item" href="#">Saturday</a></li>
+                                <li><a class="dropdown-item" href="#">Sunday</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col text-center ">
+                        <div class="dropdown-center ">
+                            <button class="btn-size dropdown-toggle btn-font " type="button" data-bs-toggle="dropdown" aria-expanded="false ">
+                            Hours
+                        </button>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item " href="# ">12:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">1:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">2:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">3:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">4:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">5:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">6:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">7:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">8:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">9:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">10:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">11:00 AM</a></li>
+                                <li><a class="dropdown-item " href="# ">12:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">1:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">2:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">3:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">4:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">5:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">6:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">7:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">8:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">9:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">10:00 PM</a></li>
+                                <li><a class="dropdown-item " href="# ">11:00 PM</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col text-center ">
                         <div class="dropdown-center ">
                             <button class="btn-size dropdown-toggle btn-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Hours
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="# ">2:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# ">3:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# ">4:00 PM</a></li>
-                                <li><a class="dropdown-item " href="# ">5:00 PM</a></li>
+                                Covid
+                            </button>
+                            <ul class="dropdown-menu" id="covidToggle">
+                                <li><a class="dropdown-item" href="#">Covid</a></li>
+                                <li><a class="dropdown-item" href="#">Normal Operations</a></li>
                             </ul>
                         </div>
-
                     </div>
+
                 </div>
                 <br>
+            </div>
+            <div class="table_container">
+                <table id="tablediv"></table>
             </div>
         </div>
         <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
