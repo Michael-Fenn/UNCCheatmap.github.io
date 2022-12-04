@@ -28,7 +28,7 @@ function populateTable(){
   //need dropdown menu to properly select so function knows which file to grab.
   var selectedMenu = document.getElementById("days").value();
   var covidToggle = document.getElementById("covidToggle").value();
-  $.get("../4155-group1/non-covid/Friday.txt", function( data )){
+  $.get("../non-covid/Friday.txt", function( data )){
     alert(data);
   }
     var linebyline = data.split('\n');
