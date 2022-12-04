@@ -19,6 +19,8 @@ map.on('load', function() {
   map.setPaintProperty("chhs", "fill-color", "#ff0000");
   map.setPaintProperty("cato", "fill-color", "#F2E34C");
   map.setPaintProperty("woodward", "fill-color", "#FFB52E");
+
+  populateTable();
 });
 
 function populateTable(){
