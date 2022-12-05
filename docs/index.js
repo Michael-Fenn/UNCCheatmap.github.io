@@ -31,33 +31,24 @@ function populateTable(){
   //need dropdown menu to properly select so function knows which file to grab.
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
-  var tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[0];
-  var newRow = tbodyRef.insertRow();
 
-  // Insert a cell at the end of the row
-  var newCell = newRow.insertCell();
-  
-  // Append a text node to the cell
-  var newText = document.createTextNode('new row');
-  newCell.appendChild(newText);
+  const {readFileSync, promises: fsPromises} = require('fs');
 
+  const contents = readFileSync("../non-covid/Friday.txt", 'utf-8');
 
-
-
-
-  $.get("../non-covid/Friday.txt", function(data) {
-    alert(data);
-    var linebyline = data.split('\n');
-    $.each(linebyline, function(key, value){
-      tableContent += '<tr>';
-      tableContent += '<td>' + value + '</td>';
-      tableContent += '</tr>';
-    });
-
-    $('#tablediv').html(tableContent);
-  });
+  const arr = contents.split(/\r?\n/);
+  var tbodyRef;
+  var newRow;
+  var newCell;
+  for(let i = 0; i < arr.length; i++){
+    tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[i];
+    newRow = tbodyRef.insertRow();
+    newCell = newRow.insertCell();
+    var newText = document.createTextNode(contents[i]);
+    newCell.appendChild(newText);
   }
 
+  
 
-
- 
+  
+}
