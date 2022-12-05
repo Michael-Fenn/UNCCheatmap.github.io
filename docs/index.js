@@ -31,9 +31,20 @@ function populateTable(){
   //need dropdown menu to properly select so function knows which file to grab.
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
-  $.ajaxSetup({ beforeSend : function(xhr) {
-    xhr.setRequestHeader("Range", "bytes=0-2800" );
-  }});  
+  var tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[0];
+  var newRow = tbodyRef.insertRow();
+
+  // Insert a cell at the end of the row
+  var newCell = newRow.insertCell();
+  
+  // Append a text node to the cell
+  var newText = document.createTextNode('new row');
+  newCell.appendChild(newText);
+
+
+
+
+
   $.get("../non-covid/Friday.txt", function(data) {
     alert(data);
     var linebyline = data.split('\n');
