@@ -35,12 +35,14 @@ function populateTable(){
   const fs = require('fs');
 
   var contents = fs.readFileSync("non-covid/Friday.txt").toString().split('\n');
+  var newRow = document.getElementById('datatable').insertRow();
 
+  console.log(contents);
 
   for(let i = 0; i < contents.length-1; i++){
-    var tbodyRef = document.getElementById('datatable').insertRow();
+    
     //newCell = newRow.insertCell();
-    tbodyRef.innerHTML = "<td>" + contents[i] + "</td>";
+    newRow.innerHTML = "<td>" + contents[i] + "</td>";
     //newText = document.createTextNode(contents[i]);
    // newCell.appendChild(newText);
   }
