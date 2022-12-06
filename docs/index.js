@@ -31,8 +31,9 @@ inputFile.addEventListener('change', () => {
   const fileReader = new FileReader();
   fileReader.onload = e => {
     const array = e.target.result.split('\n');
-    for (let i = 0; i < array.Length-1; i++){
-      var newRow = document.getElementById('datatable').insertRow();
+    var newRow = document.getElementById('datatable').insertRow();
+    console.log(array);
+    for (let i = 0; i < array.Length-1; i++){     
       newRow.innerHTML = "<td>" + array[i] + "</td>";
     }
   };
