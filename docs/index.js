@@ -40,16 +40,13 @@ function populateTable(){
 
   var contents = fs.readFileSync("docs/non-covid/Friday.txt", 'utf-8').toString().split('\n');
 
-  var tbodyRef;
-  var newRow;
-  var newCell;
-  var newText;
+
   //for(i in contents){
-    tbodyRef = document.getElementById('datatable').insertRow();
+    var tbodyRef = document.getElementById('datatable').insertRow();
     //newCell = newRow.insertCell();
     tbodyRef.innerHTML = "<td>" + "hello" + "</td>" 
-    newText = document.createTextNode(contents[i]);
-    newCell.appendChild(newText);
+    //newText = document.createTextNode(contents[i]);
+   // newCell.appendChild(newText);
  // }
 
   
