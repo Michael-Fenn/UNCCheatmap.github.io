@@ -1,7 +1,4 @@
 // Initialize and add the map
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
 window.onload = function() {
   populateTable();
 };
@@ -34,13 +31,21 @@ function populateTable(){
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
 
-  const {readFileSync, promises: fsPromises} = require('fs');
+  const openFile = (e) => {
+    const reader = new FileReader(); // filereader
+    reader.readAsText(e.target.files[0]); // read as text
+    reader.onload = () => {
+      const text = reader.result;
+      const result = text.split(/\r?\n/); // split on every new line
+      console.log(result); // do something with array
+    };
+  };
 
   var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
   var newRow = document.getElementById('datatable').insertRow();
 
-  console.log(contents);
-  newRow.innerHTML = "<td>" + contents[1] + "</td>";
+  openFile("/non-covid/Friday.txt");
+  newRow.innerHTML = "<td>" + result[1] + "</td>";
 
   for(let i = 0; i < contents.length-1; i++){
     
