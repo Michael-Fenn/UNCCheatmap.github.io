@@ -122,18 +122,6 @@
             </table> 
             <input type="file" id="inputFile">
 
-  <script>
-   const inputFile = document.querySelector('#inputFile');
-
-   inputFile.addEventListener('change', () => {
-     const fileReader = new FileReader();
-     fileReader.onload = e => {
-       const array = e.target.result.split('\n');
-       console.log(array);
-     };
-     fileReader.readAsText(inputFile.files[0], 'UTF-8');
-   });
-  </script>
         </div>
         <footer class="footer footerText ">Team WIP © 2022. All Rights Reserved.</footer>
     </body>

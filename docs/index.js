@@ -25,18 +25,27 @@ map.on('load', function() {
 
 });
 
+
+const inputFile = document.querySelector('#inputFile');
+inputFile.addEventListener('change', () => {
+  const fileReader = new FileReader();
+  fileReader.onload = e => {
+    const array = e.target.result.split('\n');
+    for (let i = 0; i < array.Length-1; i++){
+      var newRow = document.getElementById('datatable').insertRow();
+      newRow.innerHTML = "<td>" + array[i] + "</td>";
+    }
+  };
+  fileReader.readAsText(inputFile.files[0], 'UTF-8');
+});
+
 function populateTable(){
   var tableContent = '';
   //need dropdown menu to properly select so function knows which file to grab.
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
 
-  const openFile = (e) => {
-    e.target.files[0].text().then((t) => {
-      const outcome = t.split(/\r?\n/);
-      console.log(outcome);
-    });
-  };
+
   //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
   //var newRow = document.getElementById('datatable').insertRow();
 
