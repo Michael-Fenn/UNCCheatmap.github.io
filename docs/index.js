@@ -32,13 +32,10 @@ function populateTable(){
   //var covidToggle = document.getElementById("covidToggle").value();
 
   const openFile = (e) => {
-    const reader = new FileReader(); // filereader
-    reader.readAsText(e.target.files[0]); // read as text
-    reader.onload = () => {
-      const text = reader.result;
-      const result = text.split(/\r?\n/); // split on every new line
-      console.log(result); // do something with array
-    };
+    e.target.files[0].text().then((t) => {
+      const outcome = t.split(/\r?\n/);
+      console.log(outcome);
+    });
   };
   openFile("./non-covid/Friday.txt");
   //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
