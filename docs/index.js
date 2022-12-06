@@ -36,7 +36,7 @@ function populateTable(){
 
   const {readFileSync, promises: fsPromises} = require('fs');
 
-  var contents = readFileSync("non-covid/Friday.txt").toString().split('\n');
+  var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
   var newRow = document.getElementById('datatable').insertRow();
 
   console.log(contents);
