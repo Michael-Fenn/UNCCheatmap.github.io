@@ -44,7 +44,7 @@ function populateTable(){
   //for(i in contents){
     var tbodyRef = document.getElementById('datatable').insertRow();
     //newCell = newRow.insertCell();
-    tbodyRef.innerHTML = "<td>" + "hello" + "</td>" 
+    tbodyRef.innerHTML = "<td>" + "hello" + "</td>";
     //newText = document.createTextNode(contents[i]);
    // newCell.appendChild(newText);
  // }
