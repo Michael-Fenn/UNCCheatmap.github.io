@@ -1,6 +1,7 @@
 // Initialize and add the map
 window.onload = function() {
   populateTable();
+  openFile("/non-covid/Friday.txt");
 };
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
@@ -44,7 +45,7 @@ function populateTable(){
   //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
   //var newRow = document.getElementById('datatable').insertRow();
 
-  openFile("/non-covid/Friday.txt");
+  
   //newRow.innerHTML = "<td>" + result[1] + "</td>";
 
   for(let i = 0; i < contents.length-1; i++){
