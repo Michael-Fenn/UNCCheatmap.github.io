@@ -1,8 +1,4 @@
 // Initialize and add the map
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.1.js';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 
 window.onload = function() {
   populateTable();
@@ -36,15 +32,15 @@ function populateTable(){
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
 
-  const fs = require('fs');
+ // const fs = require('fs');
 
-  var contents = fs.readFileSync("docs/non-covid/Friday.txt", 'utf-8').toString().split('\n');
+//  var contents = fs.readFileSync("docs/non-covid/Friday.txt", 'utf-8').toString().split('\n');
 
 
   //for(i in contents){
-    var tbodyRef = document.getElementById('datatable').insertRow();
+  var tbodyRef = document.getElementById('datatable').insertRow();
     //newCell = newRow.insertCell();
-    tbodyRef.innerHTML = "<td>" + "hello" + "</td>";
+  tbodyRef.innerHTML = "<td>" + "hello" + "</td>";
     //newText = document.createTextNode(contents[i]);
    // newCell.appendChild(newText);
  // }
