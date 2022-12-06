@@ -37,7 +37,6 @@ function populateTable(){
       console.log(outcome);
     });
   };
-  openFile("./non-covid/Friday.txt");
   //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
   //var newRow = document.getElementById('datatable').insertRow();
 
