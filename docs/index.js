@@ -38,11 +38,12 @@ function populateTable(){
   var newRow = document.getElementById('datatable').insertRow();
 
   console.log(contents);
-
+  newRow.innerHTML = "<td>" + contents[1] + "</td>";
+  
   for(let i = 0; i < contents.length-1; i++){
     
     //newCell = newRow.insertCell();
-    newRow.innerHTML = "<td>" + contents[i] + "</td>";
+    
     //newText = document.createTextNode(contents[i]);
    // newCell.appendChild(newText);
   }
