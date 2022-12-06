@@ -37,10 +37,10 @@ function populateTable(){
   var contents = fs.readFileSync("docs/non-covid/Friday.txt", 'utf-8').toString().split('\n');
 
 
-  for(i in contents){
-  var tbodyRef = document.getElementById('datatable').insertRow();
+  for(let i = 0; i < contents.length-1; i++){
+    var tbodyRef = document.getElementById('datatable').insertRow();
     //newCell = newRow.insertCell();
-  tbodyRef.innerHTML = "<td>" + contents[i] + "</td>";
+    tbodyRef.innerHTML = "<td>" + contents[i] + "</td>";
     //newText = document.createTextNode(contents[i]);
    // newCell.appendChild(newText);
   }
