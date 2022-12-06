@@ -32,16 +32,15 @@ function populateTable(){
  // var selectedMenu = document.getElementById("days").value();
   //var covidToggle = document.getElementById("covidToggle").value();
 
-  const {readFileSync, promises: fsPromises} = require('fs');
+  const fs = require('fs');
 
-  const contents = readFileSync("../non-covid/Friday.txt", 'utf-8');
+  var contents = fs.readFileSync("../non-covid/Friday.txt", 'utf-8').toString().split('\n');
 
-  const arr = contents.split(/\r?\n/);
   var tbodyRef;
   var newRow;
   var newCell;
-  for(let i = 0; i < arr.length; i++){
-    tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[i];
+  for(let i = 0; i < contents.length; i++){
+    tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[0];
     newRow = tbodyRef.insertRow();
     newCell = newRow.insertCell();
     var newText = document.createTextNode(contents[i]);
