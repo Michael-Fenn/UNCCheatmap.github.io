@@ -3,6 +3,11 @@ var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.6.1.js';
 document.getElementsByTagName('head')[0].appendChild(script);
 
+
+window.onload = function() {
+  populateTable();
+};
+
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
 var map = new mapboxgl.Map({
     container: 'map', // container ID
@@ -23,7 +28,6 @@ map.on('load', function() {
   map.setPaintProperty("cato", "fill-color", "#F2E34C");
   map.setPaintProperty("woodward", "fill-color", "#FFB52E");
 
-  populateTable();
 });
 
 function populateTable(){
@@ -39,13 +43,14 @@ function populateTable(){
   var tbodyRef;
   var newRow;
   var newCell;
-  for(let i = 0; i < contents.length; i++){
-    tbodyRef = document.getElementById('datatable').getElementsByTagName('tbody')[0];
-    newRow = tbodyRef.insertRow();
-    newCell = newRow.insertCell();
-    var newText = document.createTextNode(contents[i]);
+  var newText;
+  //for(i in contents){
+    tbodyRef = document.getElementById('datatable').insertRow();
+    //newCell = newRow.insertCell();
+    tbodyRef.innerHTML = "<td>" + "hello" + "</td>" 
+    newText = document.createTextNode(contents[i]);
     newCell.appendChild(newText);
-  }
+ // }
 
   
 
