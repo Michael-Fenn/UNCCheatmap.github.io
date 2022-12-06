@@ -34,7 +34,7 @@ function populateTable(){
 
   const fs = require('fs');
 
-  var contents = fs.readFileSync("docs/non-covid/Friday.txt", 'utf-8').toString().split('\n');
+  var contents = fs.readFileSync("non-covid/Friday.txt").toString().split('\n');
 
 
   for(let i = 0; i < contents.length-1; i++){
