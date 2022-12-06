@@ -41,11 +41,11 @@ function populateTable(){
     };
   };
 
-  var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
-  var newRow = document.getElementById('datatable').insertRow();
+  //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
+  //var newRow = document.getElementById('datatable').insertRow();
 
   openFile("/non-covid/Friday.txt");
-  newRow.innerHTML = "<td>" + result[1] + "</td>";
+  //newRow.innerHTML = "<td>" + result[1] + "</td>";
 
   for(let i = 0; i < contents.length-1; i++){
     
