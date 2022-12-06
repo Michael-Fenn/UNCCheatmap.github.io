@@ -1,4 +1,6 @@
 // Initialize and add the map
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 window.onload = function() {
   populateTable();
