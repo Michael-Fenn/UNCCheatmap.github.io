@@ -26,14 +26,15 @@ map.on('load', function() {
 });
 
 
-const inputFile = document.querySelector('#inputFile');
+//const inputFile = document.querySelector('#inputFile');
+const inputFile = "./non-covid/Friday.txt";
 inputFile.addEventListener('change', () => {
   const fileReader = new FileReader();
   fileReader.onload = e => {
     const array = e.target.result.split('\n');
     var newRow = document.getElementById('datatable').insertRow();
     console.log(array);
-    for (let i = 0; i < array.length-1; i++){     
+    for (let i = 0; i < array.length; i++){     
       newRow.innerHTML = "<td>" + array[i] + "</td>";
       console.log(i);
     }
