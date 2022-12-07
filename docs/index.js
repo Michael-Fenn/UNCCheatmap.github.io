@@ -33,23 +33,7 @@ map.on('load', function() {
 
 });
 
-function populateTable(){
-  var tableContent = "";
-  //need dropdown menu to properly select so function knows which file to grab.
-  var selectedMenu = document.getElementById("days").value();
-  var covidToggle = document.getElementById("covidToggle").value();
-  $.get("../non-covid/Friday.txt", function( data )){
-    alert(data);
-  }
-    var linebyline = data.split('\n');
-    $.each(linebyline, function(key, value){
-      tableContent += '<tr>';
-      tableContent += '<td>' + value + '</td>';
-      tableContent += '</tr>';
-    });
 
-    $('#tablediv').html(tableContent);
-  }
 
 
 
