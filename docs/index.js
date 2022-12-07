@@ -1,49 +1,20 @@
 // Initialize and add the map
-window.onload = function() {
-  populateTable();
-
-  var array = [];
-  var xmlhttp;
-  if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-      xmlhttp = new XMLHttpRequest();
-  } else { // code for IE6, IE5
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-          var text = xmlhttp.responseText;
-          // Now convert it into array using regex
-          array = text.split(/\n|\r/g);
-          var newRow = document.getElementById('datatable').insertRow();
-          for (let i = 0; i < array.length; i++){     
-            newRow.innerHTML = "<td>" + array[i] + "</td>";
-          }
-      }
-      
- 
-}
-xmlhttp.open("GET", "./non-covid/Friday.txt", true);
-xmlhttp.send();
-  /*
-  const inputFile = "./non-covid/Friday.txt";
-  const fileReader = new FileReader();
-  fileReader.onload = () => {
-    const array = inputFile.target.result.split('\n');
-    var newRow = document.getElementById('datatable').insertRow();
-    console.log(array);
-    for (let i = 0; i < array.length; i++){     
-      newRow.innerHTML = "<td>" + array[i] + "</td>";
-      console.log(i);
-    }
-  };
-  */
-  //fileReader.readAsText(inputFile);
-};
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
 var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mfenn2/clajw6p60001j14qphmp5iz3n', // style URL
+});
+
+document.querySelectorAll('.dropdown').forEach(item => {
+  item.addEventListener('change', event => {
+      let day = document.getElementById('day').value();
+      let hour = document.getElementById('hour').value();
+      let covid = document.getElementById('covid').value();
+      console.log(day);
+      console.log(hour);
+      console.log(covid);
+  });
 });
 
 //placeholder values
@@ -62,33 +33,24 @@ map.on('load', function() {
 
 });
 
-
-//const inputFile = document.querySelector('#inputFile');
-
-
-
 function populateTable(){
-  var tableContent = '';
+  var tableContent = "";
   //need dropdown menu to properly select so function knows which file to grab.
- // var selectedMenu = document.getElementById("days").value();
-  //var covidToggle = document.getElementById("covidToggle").value();
+  var selectedMenu = document.getElementById("days").value();
+  var covidToggle = document.getElementById("covidToggle").value();
+  $.get("../non-covid/Friday.txt", function( data )){
+    alert(data);
+  }
+    var linebyline = data.split('\n');
+    $.each(linebyline, function(key, value){
+      tableContent += '<tr>';
+      tableContent += '<td>' + value + '</td>';
+      tableContent += '</tr>';
+    });
+
+    $('#tablediv').html(tableContent);
+  }
 
 
-  //var contents = readFileSync("/non-covid/Friday.txt").toString().split('\n');
-  //var newRow = document.getElementById('datatable').insertRow();
 
-  
-  //newRow.innerHTML = "<td>" + result[1] + "</td>";
-
-  //for(let i = 0; i < contents.length-1; i++){
-    
-    //newCell = newRow.insertCell();
-    
-    //newText = document.createTextNode(contents[i]);
-   // newCell.appendChild(newText);
-  //}
-
-  
-
-  
-}
+ 
