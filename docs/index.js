@@ -14,6 +14,7 @@ window.onload = function() {
           var text = xmlhttp.responseText;
           // Now convert it into array using regex
           array = text.split(/\n|\r/g);
+          var newRow = document.getElementById('datatable').insertRow();
           for (let i = 0; i < array.length; i++){     
             newRow.innerHTML = "<td>" + array[i] + "</td>";
           }
