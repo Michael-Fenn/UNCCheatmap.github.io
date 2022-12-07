@@ -33,7 +33,7 @@ inputFile.addEventListener('change', () => {
     const array = e.target.result.split('\n');
     var newRow = document.getElementById('datatable').insertRow();
     console.log(array);
-    for (let i = 0; i < array.Length-1; i++){     
+    for (let i = 0; i < array.length-1; i++){     
       newRow.innerHTML = "<td>" + array[i] + "</td>";
       console.log(i);
     }
