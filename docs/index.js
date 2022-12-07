@@ -13,7 +13,7 @@ window.onload = function() {
       console.log(i);
     }
   };
-  fileReader.readAsText(inputFile);
+  //fileReader.readAsText(inputFile);
 };
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
