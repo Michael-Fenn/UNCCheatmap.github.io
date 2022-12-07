@@ -19,7 +19,11 @@ window.onload = function() {
             newRow.innerHTML = "<td>" + array[i] + "</td>";
           }
       }
+      
+ 
 }
+xmlhttp.open("GET", "./non-covid/Friday.txt", true);
+xmlhttp.send();
   /*
   const inputFile = "./non-covid/Friday.txt";
   const fileReader = new FileReader();
@@ -63,8 +67,6 @@ map.on('load', function() {
 
 
 
-xmlhttp.open("GET", "./non-covid/Friday.txt", true);
-xmlhttp.send();
 function populateTable(){
   var tableContent = '';
   //need dropdown menu to properly select so function knows which file to grab.
