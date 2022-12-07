@@ -35,6 +35,7 @@ inputFile.addEventListener('change', () => {
     console.log(array);
     for (let i = 0; i < array.Length-1; i++){     
       newRow.innerHTML = "<td>" + array[i] + "</td>";
+      console.log(i);
     }
   };
   fileReader.readAsText(inputFile.files[0], 'UTF-8');
