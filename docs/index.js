@@ -2,9 +2,27 @@
 window.onload = function() {
   populateTable();
 
+  var array = [];
+  var xmlhttp;
+  if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+  } else { // code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          var text = xmlhttp.responseText;
+          // Now convert it into array using regex
+          array = text.split(/\n|\r/g);
+          for (let i = 0; i < array.length; i++){     
+            newRow.innerHTML = "<td>" + array[i] + "</td>";
+          }
+      }
+}
+  /*
   const inputFile = "./non-covid/Friday.txt";
   const fileReader = new FileReader();
-  fileReader.onload = inputFile => {
+  fileReader.onload = () => {
     const array = inputFile.target.result.split('\n');
     var newRow = document.getElementById('datatable').insertRow();
     console.log(array);
@@ -13,6 +31,7 @@ window.onload = function() {
       console.log(i);
     }
   };
+  */
   //fileReader.readAsText(inputFile);
 };
 
@@ -42,6 +61,9 @@ map.on('load', function() {
 //const inputFile = document.querySelector('#inputFile');
 
 
+
+xmlhttp.open("GET", "./non-covid/Friday.txt", true);
+xmlhttp.send();
 function populateTable(){
   var tableContent = '';
   //need dropdown menu to properly select so function knows which file to grab.
