@@ -3,10 +3,9 @@ window.onload = function() {
   populateTable();
 
   const inputFile = "./non-covid/Friday.txt";
-inputFile.addEventListener('change', () => {
   const fileReader = new FileReader();
-  fileReader.onload = e => {
-    const array = e.target.result.split('\n');
+  fileReader.onload = inputFile => {
+    const array = inputFile.target.result.split('\n');
     var newRow = document.getElementById('datatable').insertRow();
     console.log(array);
     for (let i = 0; i < array.length; i++){     
@@ -15,7 +14,6 @@ inputFile.addEventListener('change', () => {
     }
   };
   fileReader.readAsText(inputFile.files[0], 'UTF-8');
-});
 };
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWZlbm4yIiwiYSI6ImNsYWp1cGk0aTAzNnUzbnMwZ3o0bm4xNG8ifQ.-FWDnfl7FidedLkI7qIJiA';
