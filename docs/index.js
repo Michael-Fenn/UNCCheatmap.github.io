@@ -21,8 +21,8 @@ window.onload = function(){
       // with the time it adds it to a new array 
       
       for (let a = 0; a < arr.length; a++){
-        let time_arr = [];
-        let building_time = arr[a].substring(0,2);
+        const time_arr = [];
+        const building_time = arr[a].substring(0,2);
         if(building_time == time_checker){
           time_arr[a] = arr[a].toString
         }
@@ -38,7 +38,7 @@ window.onload = function(){
 
       //changed arr to time_arr 
       for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td>" + arr[i+1] + "</td></tr>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[i] +"</td> <td>" + time_arr[i] + "</td></tr>";
       }
     }
 
