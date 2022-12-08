@@ -13,11 +13,12 @@ window.onload = function(){
       let x = await fetch(file);
       let y = await x.text();
       let arr = y.split('\n');
-      const old_tbody = document.getElementById("tableBody")
-      const new_tbody = document.createElement('tbody');
-      old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
+      var table = document.getElementById("tableBody");
+      for(var j = table.rows.length; j > 0; j--){
+        table.deleteRow(j-1);
+      }
       for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<td>" + arr[i] + "</td>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] + "</td></tr>";
       }
     }
 /*
