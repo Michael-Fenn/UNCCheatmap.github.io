@@ -19,10 +19,10 @@ window.onload = function(){
 
       //created a loop that goes through the array made by the data and check every line for the time and if it matches
       // with the time it adds it to a new array 
-      
+      let time_arr = [];
+      let building_time = [];
       for (let a = 0; a < arr.length; a++){
-        const time_arr = [];
-        const building_time = arr[a].substring(0,2);
+        building_time = arr[a].substring(0,2);
         if(building_time == time_checker){
           time_arr[a] = arr[a].toString
         }
