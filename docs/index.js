@@ -10,22 +10,35 @@ window.onload = function(){
     }
 
     async function getText(file) {
+      let hour = document.getElementById('hour').value;
       let x = await fetch(file);
       let y = await x.text();
-      let arr = y.replace( /\n/g, " " ).split( " " )
+      let arr = y.split('\n');
+            //suppose to chect the time and set the value as string, not sure if neccessary 
+      let time_checker = hour.toString();
+
+      //created a loop that goes through the array made by the data and check every line for the time and if it matches
+      // with the time it adds it to a new array 
+      
+      for (i in arr){
+        time_arr =[];
+        building_time = arr[i].substring(0,2);
+        if(building_time == time_checker){
+          time_arr[i] = arr[i].toString
+        }
+      }
+
       var table = document.getElementById("tableBody");
-      let hour = document.getElementById('hour').value;
-      const matches = arr.filter(s => s.includes(hour));
-      arr.splice(0,1);
-      arr = arr.filter(function(_, i) {
-        return (i + 1) % 1;
-      })
+      //removes old table
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
-      for (let i = 0; i <= matches.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td>" + arr[i+1] + "</tr>";
+      //creates new table data
+
+      //changed arr to time_arr 
+      for (let i = 0; i < arr.length; i++){
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + time_arr[i] +"</td> <td>" + time_arr[i+1] + "</tr>";
       }
     }
 
