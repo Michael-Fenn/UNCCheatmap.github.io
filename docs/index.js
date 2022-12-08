@@ -14,21 +14,23 @@ window.onload = function(){
       let y = await x.text();
       let arr = y.replace( /\n/g, " " ).split( " " )
       var table = document.getElementById("tableBody");
+      let hour = document.getElementById('hour').value;
+      const matches = arr.filter(s => s.includes(hour));
+      arr = arr.remove[0];
       arr = arr.filter(function(_, i) {
-        return (i + 1) % 3;
+        return (i + 1) % 1;
       })
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       for (let i = 0; i <= arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td> + " + arr[i+1] + "</tr>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td>" + arr[i+1] + "</tr>";
       }
     }
 
 document.getElementById('day').onchange = function(){
   let day = document.getElementById('day').value;
-  let hour = document.getElementById('hour').value;
   let covid = document.getElementById('covid').value;
   let url = "";
   if (covid == "non-covid"){
