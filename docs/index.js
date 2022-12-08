@@ -30,7 +30,7 @@ window.onload = function(){
         if(building_time == hour){
           time_arr[a] = arr[a].toString()
         }
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + time_arr[a] + "</td></tr>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + arr[a] + "</td></tr>";
       }
 
       
