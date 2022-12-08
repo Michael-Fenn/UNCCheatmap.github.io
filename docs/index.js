@@ -27,13 +27,11 @@ window.onload = function(){
       let building_time = [];
       for (let a = 0; a < arr.length; a++){
         building_time = arr[a].substring(0,2);
+        building_name = arr[a].substring(3,6);
         if(building_time == hour){
-          time_arr[a] = arr[a].toString()
+          document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + building_name[a] + "</td></tr>";
         }
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + arr[a] + "</td></tr>";
       }
-
-      
     }
 
 document.getElementById('day').onchange = function(){
