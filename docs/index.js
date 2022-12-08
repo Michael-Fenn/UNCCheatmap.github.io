@@ -5,7 +5,14 @@ var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mfenn2/clajw6p60001j14qphmp5iz3n', // style URL
 });
-
+window.onload = function(){
+      let day = document.getElementById('day').value();
+      let hour = document.getElementById('hour').value();
+      let covid = document.getElementById('covid').value();
+      console.log(day);
+      console.log(hour);
+      console.log(covid);
+}
 document.querySelectorAll('.dropdown').forEach(item => {
   item.addEventListener('change', event => {
       let day = document.getElementById('day').value();
