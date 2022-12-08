@@ -16,7 +16,7 @@ window.onload = function(){
       var table = document.getElementById("tableBody");
       let hour = document.getElementById('hour').value;
       const matches = arr.filter(s => s.includes(hour));
-      arr = arr.remove(0);
+      arr.splice(0,1);
       arr = arr.filter(function(_, i) {
         return (i + 1) % 1;
       })
