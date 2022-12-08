@@ -16,7 +16,13 @@ window.onload = function(){
       let arr = y.split('\n');
             //suppose to chect the time and set the value as string, not sure if neccessary 
       let time_checker = hour.toString();
-
+      var table = document.getElementById("tableBody");
+      //removes old table
+      for(var j = table.rows.length; j > 0; j--){
+        table.deleteRow(j-1);
+      }
+      //creates new table data
+      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       //created a loop that goes through the array made by the data and check every line for the time and if it matches
       // with the time it adds it to a new array 
       let time_arr = [];
@@ -26,20 +32,10 @@ window.onload = function(){
         if(building_time == time_checker){
           time_arr[a] = arr[a].toString
         }
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] +"</td> <td>" + time_arr[a] + "</td></tr>";
       }
 
-      var table = document.getElementById("tableBody");
-      //removes old table
-      for(var j = table.rows.length; j > 0; j--){
-        table.deleteRow(j-1);
-      }
-      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
-      //creates new table data
-
-      //changed arr to time_arr 
-      for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[i] +"</td> <td>" + time_arr[i] + "</td></tr>";
-      }
+      
     }
 
 document.getElementById('day').onchange = function(){
