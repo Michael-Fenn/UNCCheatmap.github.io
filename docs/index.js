@@ -21,7 +21,7 @@ window.onload = function(){
       // with the time it adds it to a new array 
       
       for (let a = 0; a < arr.length; a++){
-        time_arr =[];
+        let time_arr = [];
         building_time = arr[a].substring(0,2);
         if(building_time == time_checker){
           time_arr[a] = arr[a].toString
