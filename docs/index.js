@@ -23,11 +23,9 @@ window.onload = function(){
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       //created a loop that goes through the array made by the data and check every line for the time and if it matches
       // with the time it adds it to a new array 
-      let time_arr = [];
-      let building_time = [];
       for (let a = 0; a < arr.length; a++){
-        building_time = arr[a].substring(0,2);
-        building_name = arr[a].substring(3,6);
+       let building_time = arr[a].substring(0,2);
+       let building_name = arr[a].substring(3,6);
         if(building_time == hour){
           document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + building_name[a] + "</td></tr>";
         }
