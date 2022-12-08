@@ -12,7 +12,7 @@ window.onload = function(){
     async function getText(file) {
       let x = await fetch(file);
       let y = await x.text();
-      let arr = y.replace( /\n/g, " " ).split( " " )
+      let arr = y.match(/[^\s]+/g);
       var table = document.getElementById("tableBody");
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
