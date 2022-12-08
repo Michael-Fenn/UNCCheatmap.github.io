@@ -12,8 +12,6 @@ window.onload = function(){
       console.log(day);
       console.log(hour);
       console.log(covid);
-
-      getText("https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt");
     }
 
     async function getText(file) {
@@ -21,7 +19,7 @@ window.onload = function(){
       let y = await x.text();
       let arr = y.split('\n');
       for (let i = 0; i < arr.length; i++){
-        document.getElementById("test").innerHTML +=  "<br>" + arr[i];
+        document.getElementById("tablediv").innerHTML +=  "<td>" + arr[i] + "</td>";
       }
     }
 /*
@@ -87,7 +85,7 @@ document.getElementById('day').onchange = function(){
       url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Sunday.txt";
     }
   }
-
+  getText(url);
 }
 //placeholder values
 var very_high = 1000;
