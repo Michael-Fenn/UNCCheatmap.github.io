@@ -14,6 +14,9 @@ window.onload = function(){
       let y = await x.text();
       let arr = y.replace( /\n/g, " " ).split( " " )
       var table = document.getElementById("tableBody");
+      arr = arr.filter(function(_, i) {
+        return (i + 1) % 3;
+      })
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
