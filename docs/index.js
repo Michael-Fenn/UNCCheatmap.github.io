@@ -18,6 +18,9 @@ window.onload = function(){
       let x = await fetch(file);
       let y = await x.text();
       let arr = y.split('\n');
+      const old_tbody = document.getElementById("tableBody")
+      const new_tbody = document.createElement('tbody');
+      old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
       for (let i = 0; i < arr.length; i++){
         document.getElementById("tablediv").innerHTML +=  "<td>" + arr[i] + "</td>";
       }
