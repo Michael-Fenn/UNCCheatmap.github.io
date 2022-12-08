@@ -12,13 +12,13 @@ window.onload = function(){
     async function getText(file) {
       let x = await fetch(file);
       let y = await x.text();
-      let arr = y.split("\n");
+      let arr = y.replace( /\n/g, " " ).split( " " )
       var table = document.getElementById("tableBody");
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
-      for (let i = 0; i < arr.length; i++){
+      for (let i = 0; i <= arr.length; i++){
         document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td> + " + arr[i+1] + "</tr>";
       }
     }
