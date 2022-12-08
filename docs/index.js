@@ -17,7 +17,7 @@ window.onload = function(){
       const new_tbody = document.createElement('tbody');
       old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
       for (let i = 0; i < arr.length; i++){
-        document.getElementById("tablediv").innerHTML +=  "<td>" + arr[i] + "</td>";
+        document.getElementById("tableBody").innerHTML +=  "<td>" + arr[i] + "</td>";
       }
     }
 /*
