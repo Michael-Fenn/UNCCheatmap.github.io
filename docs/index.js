@@ -18,7 +18,7 @@ window.onload = function(){
         table.deleteRow(j-1);
       }
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
-      for (let i = 0; i < arr.length; i+2){
+      for (let i = 0; i < arr.length; i++){
         document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td> + " + arr[i+1] + "</tr>";
       }
     }
