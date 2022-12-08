@@ -14,11 +14,12 @@ window.onload = function(){
       console.log(covid);
 
       const url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt"
-      fetch(url)
-      .then( r => r.text() )
-      .then( t => document.getElementById("test").innerHTML = t)
-
-}
+      let x = await fetch(url);
+      let y = await x.text();
+      let arr = y.split('\n');
+      for (let i = 0; i < arr.length; i++){
+  	  document.getElementById("test").innerHTML +=  "<br>" + arr[i];
+      }
 /*
 function dropSelect(){
   let selection = document.getElementById('day')
