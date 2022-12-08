@@ -13,13 +13,17 @@ window.onload = function(){
       console.log(hour);
       console.log(covid);
 
-      const url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt"
-      let x = await fetch(url);
+      getText("https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt");
+    }
+
+    async function getText(file) {
+      let x = await fetch(file);
       let y = await x.text();
       let arr = y.split('\n');
       for (let i = 0; i < arr.length; i++){
-  	  document.getElementById("test").innerHTML +=  "<br>" + arr[i];
+        document.getElementById("demo").innerHTML +=  "<br>" + arr[i];
       }
+    }
 /*
 function dropSelect(){
   let selection = document.getElementById('day')
