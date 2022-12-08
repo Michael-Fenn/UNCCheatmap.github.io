@@ -15,7 +15,6 @@ window.onload = function(){
       let y = await x.text();
       let arr = y.split('\n');
             //suppose to chect the time and set the value as string, not sure if neccessary 
-      let time_checker = hour.toString();
       var table = document.getElementById("tableBody");
       //removes old table
       for(var j = table.rows.length; j > 0; j--){
@@ -29,10 +28,10 @@ window.onload = function(){
       let building_time = [];
       for (let a = 0; a < arr.length; a++){
         building_time = arr[a].substring(0,2);
-        if(building_time == time_checker){
+        if(building_time == hour){
           time_arr[a] = arr[a].toString
         }
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] +"</td><td>" + time_arr[a] + "</td></tr>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + time_arr[a] + "</td></tr>";
       }
 
       
