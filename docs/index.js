@@ -13,8 +13,10 @@ window.onload = function(){
       console.log(hour);
       console.log(covid);
 }
-document.querySelectorAll('.dropdown').forEach(item => {
-  item.addEventListener('change', event => {
+/*
+function dropSelect(){
+  let selection = document.getElementById('day')
+  selection.addEventListener('change', function() {
       let day = document.getElementById('day').value;
       let hour = document.getElementById('hour').value;
       let covid = document.getElementById('covid').value;
@@ -22,8 +24,10 @@ document.querySelectorAll('.dropdown').forEach(item => {
       console.log(hour);
       console.log(covid);
   });
-});
-
+}; */
+document.getElementById('day').onchange = function(){
+  console.log(this.value);
+}
 //placeholder values
 var very_high = 1000;
 var high = 800;
