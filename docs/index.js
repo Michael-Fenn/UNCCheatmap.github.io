@@ -25,7 +25,7 @@ window.onload = function(){
       }
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       for (let i = 0; i <= matches.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + matches[i] +"</td> <td>" + matches[i+1] + "</tr>";
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] +"</td> <td>" + arr[i+1] + "</tr>";
       }
     }
 
