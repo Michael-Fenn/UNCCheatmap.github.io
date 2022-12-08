@@ -13,26 +13,17 @@ window.onload = function(){
       let x = await fetch(file);
       let y = await x.text();
       let arr = y.split('\n');
+      let arr2 = arr.split(" ");
       var table = document.getElementById("tableBody");
       for(var j = table.rows.length; j > 0; j--){
         table.deleteRow(j-1);
       }
-      for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr[i] + "</td></tr>";
+      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
+      for (let i = 0; i < arr2.length; i+2){
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + arr2[i] +"</td> <td> + " + arr2[i+1] + "</tr>";
       }
     }
-/*
-function dropSelect(){
-  let selection = document.getElementById('day')
-  selection.addEventListener('change', function() {
-      let day = document.getElementById('day').value;
-      let hour = document.getElementById('hour').value;
-      let covid = document.getElementById('covid').value;
-      console.log(day);
-      console.log(hour);
-      console.log(covid);
-  });
-}; */
+
 document.getElementById('day').onchange = function(){
   let day = document.getElementById('day').value;
   let hour = document.getElementById('hour').value;
