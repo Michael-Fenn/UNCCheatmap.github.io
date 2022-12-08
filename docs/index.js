@@ -12,6 +12,12 @@ window.onload = function(){
       console.log(day);
       console.log(hour);
       console.log(covid);
+
+      const url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt"
+      fetch(url)
+      .then( r => r.text() )
+      .then( t => document.getElementById("test").innerHTML = t)
+
 }
 /*
 function dropSelect(){
@@ -26,6 +32,14 @@ function dropSelect(){
   });
 }; */
 document.getElementById('day').onchange = function(){
+  var arr = [];
+  var fr = new FileReader();
+  fr.onload = function(){
+    var lines = this.result.split('\n');
+    for (var line = 0; line < lines.length; line++){
+      arr = []
+    }
+  }
   console.log(this.value);
 }
 //placeholder values
