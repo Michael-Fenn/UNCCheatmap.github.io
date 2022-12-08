@@ -37,8 +37,8 @@ window.onload = function(){
       //creates new table data
 
       //changed arr to time_arr 
-      for (let i = 0; i < arr.length; i++){
-        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + time_arr[i] +"</td> <td>" + time_arr[i+1] + "</tr>";
+      for (let i = 0; i < time_arr.length; i++){
+        document.getElementById("tableBody").innerHTML +=  "<tr><td>" + time_arr[i] +"</td> <td>" + time_arr[i+1] + "</td></tr>";
       }
     }
 
