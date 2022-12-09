@@ -41,6 +41,7 @@ window.onload = function(){
 
     function colorChange(building, count){
       let layer_names = ['Unio','Wood','AtkiG','Came','UREC','Bioi','Cone','StuA','Fret','Colv','Cato','Burs','PORT','Pros'];
+      building.trim();
       if(count > 1000){
         map.setPaintProperty(building,'fill-color', '#FF0000');
      }
