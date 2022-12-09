@@ -8,7 +8,8 @@ var map = new mapboxgl.Map({
 window.onload = function(){
       getText("https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/MondayCleaned.txt")
     }
-
+    
+    //fetches file url
     async function getText(file) {
       let hour = document.getElementById('hour').value.toString();
       let x = await fetch(file);
@@ -27,19 +28,145 @@ window.onload = function(){
       let building_time = []; 
       let building_count = [];
       for (let a = 0; a < arr.length; a++){
-      
        building_time[a] = arr[a].substring(0,2).toString();
        building_name[a] = arr[a].substring(3, 8);
         building_count[a] =  arr[a].substring(8, );
         console.log(building_time[a]);
         if(building_time[a] == hour){
           document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_name[a] + "</td><td>" + building_count[a] + "</td></tr>";
-        
+          colorChange(building_name[a], building_count[a]);
         }
       }
     }
 
+    function colorChange(building, count){
+      let layer_names = ['Unio','Wood','AtkiG','Came','UREC','Bioi','Cone','StuA','Fret','Colv','Cato','Burs','PORT','Pros'];
+      if(count > 1000){
+        map.setPaintProperty(building,'fill-color', '#FF0000');
+     }
+     else if(count > 800){
+        map.setPaintProperty(building,'fill-color', '#FFA500');
+     }
+     else if(count > 600){
+        map.setPaintProperty(building,'fill-color', '#FFFF9F');
+     }
+     else if (count > 400){
+        map.setPaintProperty(building,'fill-color', '#ADD8E6');
+     }
+     else if (count > 200){
+        map.setPaintProperty(building,'fill-color', '#0000FF');
+     }
+     else{
+        map.setPaintProperty(building,'fill-color', '#00008B');
+     }
+    }
+    
+//checks drop down status and updates table based on selection, time/hour part isn't working yet
 document.getElementById('day').onchange = function(){
+  let day = document.getElementById('day').value;
+  let covid = document.getElementById('covid').value;
+  let url = "";
+  if (covid == "non-covid"){
+    if (day == "mon"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/MondayCleaned.txt";
+    }
+    else if (day == "tue"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/TuesdayCleaned.txt";
+    }
+    else if (day == "wed"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/WednesdayCleaned.txt";
+    }
+    else if (day == "thu"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/ThursdayCleaned.txt";
+    }
+    else if (day == "fri"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt";
+    }
+    else if (day == "sat"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/SaturdayCleaned.txt";
+    }
+    else if (day == "sun"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/SundayCleaned.txt";
+    }
+  }
+  else{
+    if (day == "mon"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Monday.txt";
+    }
+    else if (day == "tue"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Tuesday.txt";
+    }
+    else if (day == "wed"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Wednesday.txt";
+    }
+    else if (day == "thu"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Thursday.txt";
+    }
+    else if (day == "fri"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Friday.txt";
+    }
+    else if (day == "sat"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Saturday.txt";
+    }
+    else if (day == "sun"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Sunday.txt";
+    }
+  }
+  getText(url);
+}
+document.getElementById('hour').onchange = function(){
+  let day = document.getElementById('day').value;
+  let covid = document.getElementById('covid').value;
+  let url = "";
+  if (covid == "non-covid"){
+    if (day == "mon"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/MondayCleaned.txt";
+    }
+    else if (day == "tue"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/TuesdayCleaned.txt";
+    }
+    else if (day == "wed"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/WednesdayCleaned.txt";
+    }
+    else if (day == "thu"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/ThursdayCleaned.txt";
+    }
+    else if (day == "fri"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/FridayCleaned.txt";
+    }
+    else if (day == "sat"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/SaturdayCleaned.txt";
+    }
+    else if (day == "sun"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/non-covid/SundayCleaned.txt";
+    }
+  }
+  else{
+    if (day == "mon"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Monday.txt";
+    }
+    else if (day == "tue"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Tuesday.txt";
+    }
+    else if (day == "wed"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Wednesday.txt";
+    }
+    else if (day == "thu"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Thursday.txt";
+    }
+    else if (day == "fri"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Friday.txt";
+    }
+    else if (day == "sat"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Saturday.txt";
+    }
+    else if (day == "sun"){
+      url = "https://raw.githubusercontent.com/Michael-Fenn/4155-group1/main/covid/Sunday.txt";
+    }
+  }
+  getText(url);
+}
+document.getElementById('covid').onchange = function(){
   let day = document.getElementById('day').value;
   let covid = document.getElementById('covid').value;
   let url = "";
@@ -99,16 +226,11 @@ var low = 400;
 var very_low = 200;
 //current building names: "uncc"(union), chhs, cato, woodward, bioinformatics, prospector, portal, student-activity-center, 
 // cameron, burson, fretwell, colvard, cone, atkins, urec. 
+/*
 map.on('load', function() {
   map.setPaintProperty("Unio",'fill-color', '#0000FF');
   map.setPaintProperty("PORT", "fill-color", "#ff0000");
   map.setPaintProperty("Cato", "fill-color", "#F2E34C");
   map.setPaintProperty("Wood", "fill-color", "#FFB52E");
 
-});
-
-
-
-
-
- 
+});*/
