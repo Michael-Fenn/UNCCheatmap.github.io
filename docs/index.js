@@ -10,7 +10,7 @@ window.onload = function(){
     }
 
     async function getText(file) {
-      let hour = document.getElementById('hour').value;
+      let hour = document.getElementById('hour').value.toString();
       let x = await fetch(file);
       let y = await x.text();
       let arr = y.split('\n'); 
@@ -20,17 +20,21 @@ window.onload = function(){
         table.deleteRow(j-1);
       }
       //creates new table data
-      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
+      document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th>Average # of Connections</th></tr>";
       //created a loop that goes through the array made by the data and check every line for the time and if it matches
       // with the time it adds it to a new array
       let building_name = [];
       let building_time = []; 
+      let building_count = [];
       for (let a = 0; a < arr.length; a++){
-      console.log(arr[a].substring(0,2));
-       building_time[a] = arr[a].substring(0,2);
-       building_name[a] = arr[a].substring(3,6);
-        if(building_time == hour){
-          document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + building_name[a] + "</td></tr>";
+      
+       building_time[a] = arr[a].substring(0,2).toString();
+       building_name[a] = arr[a].substring(3, 8);
+        building_count[a] =  arr[a].substring(8, );
+        console.log(building_time[a]);
+        if(building_time[a] == hour){
+          document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_name[a] + "</td><td>" + building_count[a] + "</td></tr>";
+        
         }
       }
     }
