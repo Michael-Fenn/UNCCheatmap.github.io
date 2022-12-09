@@ -22,10 +22,13 @@ window.onload = function(){
       //creates new table data
       document.getElementById("tableBody").innerHTML +=  "<tr><th>Building</th><th># of Connections</th></tr>";
       //created a loop that goes through the array made by the data and check every line for the time and if it matches
-      // with the time it adds it to a new array 
+      // with the time it adds it to a new array
+      let building_name = [];
+      let building_time = []; 
+      console.log(arr[a].substring(0,2));
       for (let a = 0; a < arr.length; a++){
-       let building_time = arr[a].substring(0,2);
-       let building_name = arr[a].substring(3,6);
+       building_time[a] = arr[a].substring(0,2);
+       building_name[a] = arr[a].substring(3,6);
         if(building_time == hour){
           document.getElementById("tableBody").innerHTML +=  "<tr><td>" + building_time[a] + "</td><td>" + building_name[a] + "</td></tr>";
         }
