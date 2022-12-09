@@ -25,8 +25,8 @@ window.onload = function(){
       // with the time it adds it to a new array
       let building_name = [];
       let building_time = []; 
-      console.log(arr[a].substring(0,2));
       for (let a = 0; a < arr.length; a++){
+      console.log(arr[a].substring(0,2));
        building_time[a] = arr[a].substring(0,2);
        building_name[a] = arr[a].substring(3,6);
         if(building_time == hour){
